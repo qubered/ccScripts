@@ -14,7 +14,7 @@ local function displayStressInfo()
     monitor.setCursorPos(1, 3)
     monitor.write("Total Stress:")
     monitor.setCursorPos(1, 4)
-    monitor.write"  " .. (total .. "su")
+    monitor.write()"  " .. (total .. "su")
     
     monitor.setCursorPos(1, 5)
     monitor.write("Stress Percentage:")
