@@ -18,3 +18,4 @@ while true do
     stressPercent = current / total * 100
     displayStressInfo()
     sleep(1)
+end
