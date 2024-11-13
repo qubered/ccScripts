@@ -4,21 +4,21 @@ monitor = peripheral.wrap("front")
 
 local function displayStressInfo()
     monitor.clear()
-    monitor.setTextScale(0.9)
+    monitor.setTextScale(1)
     
     monitor.setCursorPos(1, 1)
     monitor.write("Current Stress:")
     monitor.setCursorPos(1, 2)
     monitor.write("  " .. current .. "su")
     
-    monitor.setCursorPos(1, 3)
-    monitor.write("Total Stress:")
     monitor.setCursorPos(1, 4)
+    monitor.write("Total Stress:")
+    monitor.setCursorPos(1, 5)
     monitor.write("  " .. total .. "su")
     
-    monitor.setCursorPos(1, 5)
+    monitor.setCursorPos(1, 7)
     monitor.write("Stress Percentage:")
-    monitor.setCursorPos(1, 6)
+    monitor.setCursorPos(1, 8)
     monitor.write("  " .. string.format("%.2f", stressPercent) .. "%")
 end
 
