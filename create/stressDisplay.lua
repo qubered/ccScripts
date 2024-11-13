@@ -1,4 +1,4 @@
--- Script to display the stress info on the current create rotation network
+-- Script to display the stress info on the current create rotation network on a monitor
 stress = peripheral.wrap("bottom")
 monitor = peripheral.wrap("front")
 
