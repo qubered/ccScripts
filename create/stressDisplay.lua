@@ -2,6 +2,11 @@
 stress = peripheral.wrap("bottom")
 monitor = peripheral.wrap("front")
 
+-- startup function
+term.clear()
+print("hello :) what are you looking at??")
+print("running stress display script v1.1")
+
 local function displayStressInfo()
     monitor.clear()
     monitor.setTextScale(1)
